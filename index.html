@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vinoth Robert Xavier | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a2d9d5a64f.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gray-900 text-white py-10">
+    <div class="max-w-5xl mx-auto text-center">
+      <!-- Profile Photo -->
+      <img src="https://via.placeholder.com/120" alt="Profile Photo"
+           class="w-28 h-28 mx-auto rounded-full border-4 border-yellow-400 shadow-lg mb-4">
+      
+      <h1 class="text-4xl font-bold">Vinoth Robert Xavier</h1>
+      <p class="mt-2 text-lg">Senior Java Backend Developer | Cloud | Microservices</p>
+
+      <!-- Social Icons -->
+      <div class="mt-4 flex justify-center space-x-6 text-2xl">
+        <a href="mailto:vinoth.xavier@resolvetech.com" class="hover:text-yellow-400">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vinoth-robertxavier" target="_blank" class="hover:text-yellow-400">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/your-username" target="_blank" class="hover:text-yellow-400">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <!-- Resume Button -->
+      <div class="mt-6">
+        <a href="resume.pdf" target="_blank" 
+           class="inline-block px-6 py-2 bg-yellow-400 text-gray-900 font-semibold rounded-lg shadow hover:bg-yellow-500 transition">
+          <i class="fas fa-file-alt mr-2"></i> Download Resume
+        </a>
+      </div>
+
+      <!-- Navigation -->
+      <nav class="mt-6 space-x-6">
+        <a href="#about" class="hover:text-yellow-400">About</a>
+        <a href="#skills" class="hover:text-yellow-400">Skills</a>
+        <a href="#projects" class="hover:text-yellow-400">Projects</a>
+        <a href="#experience" class="hover:text-yellow-400">Experience</a>
+        <a href="#contact" class="hover:text-yellow-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="max-w-5xl mx-auto py-16 px-6">
+    <h2 class="text-2xl font-bold mb-4">About Me</h2>
+    <p class="text-lg">
+      I am a software engineer with 15+ years of experience specializing in Java, Spring Boot,
+      Microservices, and Cloud-native applications across automotive, logistics, and manufacturing domains.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-white py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-2xl font-bold mb-4">Technical Skills</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-4 text-lg">
+        <li>Java, Spring Boot, Microservices</li>
+        <li>Angular, JavaScript, Node.js</li>
+        <li>AWS (Lambda, S3, SQS, EKS, Cognito)</li>
+        <li>GCP (GKE, Cloud Run, Dataflow, Apigee)</li>
+        <li>Databases: PostgreSQL, Oracle, MySQL</li>
+        <li>CI/CD: Git, Jenkins, Docker, Kubernetes</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="max-w-5xl mx-auto py-16 px-6">
+    <h2 class="text-2xl font-bold mb-6">Projects</h2>
+    <div class="grid gap-6 md:grid-cols-2">
+      
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">CloudSenseAI</h3>
+        <p>
+          AI-powered cloud observability platform integrating anomaly detection, 
+          ServiceNow automation, and chatbot-based incident resolution.
+        </p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Application Modernization</h3>
+        <p>
+          Migrated monolithic applications to cloud-native microservices on GCP 
+          using Spring Boot and Kubernetes.
+        </p>
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2">Data Migration</h3>
+        <p>
+          Led Oracle → PostgreSQL migration with zero downtime strategy for 
+          mission-critical applications.
+        </p>
+      </div>
+
+    </div>
+  </section>
+<!-- Experience -->
+<section id="experience" class="bg-gray-50 py-16 px-6">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-2xl font-bold mb-6">Experience</h2>
+
+    <div class="space-y-8 border-l-4 border-yellow-400 pl-6">
+
+      <!-- Ford -->
+      <div class="experience-item">
+        <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+          <div>
+            <h3 class="text-xl font-semibold">Ford Motor Company</h3>
+            <p class="text-gray-600">Development Expert – Java Backend | 2014 – 2022</p>
+          </div>
+          <span class="icon transition-transform transform">+</span>
+        </button>
+        <div class="details hidden mt-2">
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Led cloud modernization efforts, migrating legacy systems to microservices on GCP.</li>
+            <li>Designed and deployed scalable backend systems using Java, Spring Boot, and Kubernetes.</li>
+            <li>Collaborated across global teams to deliver enterprise-grade solutions in Automotive IT.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CBRE -->
+      <div class="experience-item">
+        <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+          <div>
+            <h3 class="text-xl font-semibold">CBRE</h3>
+            <p class="text-gray-600">Senior Java Developer | 2022 – 2023</p>
+          </div>
+          <span class="icon transition-transform transform">+</span>
+        </button>
+        <div class="details hidden mt-2">
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Built enterprise microservices with Spring Boot, REST APIs, and Docker containers.</li>
+            <li>Integrated CI/CD pipelines using Jenkins and GitHub for faster deployments.</li>
+            <li>Enhanced performance of database-heavy applications on PostgreSQL and Oracle.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- CloudSenseAI -->
+      <div class="experience-item">
+        <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+          <div>
+            <h3 class="text-xl font-semibold">CloudSenseAI (Personal Project)</h3>
+            <p class="text-gray-600">Founder / Architect | 2023 – Present</p>
+          </div>
+          <span class="icon transition-transform transform">+</span>
+        </button>
+        <div class="details hidden mt-2">
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Developed a cloud observability platform with AWS Lambda, Bedrock, and AI automation.</li>
+            <li>Implemented chatbot-driven incident resolution and ServiceNow integration.</li>
+            <li>Applied anomaly detection models for real-time cloud performance monitoring.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-100 py-16 px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Contact</h2>
+      <p>Email: <a href="mailto:vinothr0310@gmail.com" class="text-blue-600 hover:underline">vinothr0310@gmail.com</a></p>
+      <p>LinkedIn: 
+        <a href="https://www.linkedin.com/in/vinoth-robertxavier" target="_blank" class="text-blue-600 hover:underline">
+          linkedin.com/in/vinoth-robertxavier
+        </a>
+      </p>
+      <p>GitHub: 
+        <a href="https://github.com/vinoth0310" target="_blank" class="text-blue-600 hover:underline">
+          github.com/vinoth0310
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-4">
+    <p>© 2025 Vinoth Robert Xavier</p>
+  </footer>
+<!-- JS for expand/collapse -->
+<script>
+  function toggleDetails(button) {
+    const details = button.nextElementSibling;
+    const icon = button.querySelector(".icon");
+
+    // toggle visibility
+    details.classList.toggle("hidden");
+
+    // toggle icon
+    if (details.classList.contains("hidden")) {
+      icon.textContent = "+";
+      icon.classList.remove("rotate-45");
+    } else {
+      icon.textContent = "–";
+    }
+  }
+</script>
+</body>
+</html>
