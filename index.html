@@ -17,7 +17,7 @@
            class="w-28 h-28 mx-auto rounded-full border-4 border-yellow-400 shadow-lg mb-4">
       
       <h1 class="text-4xl font-bold">Vinoth Robert Xavier</h1>
-      <p class="mt-2 text-lg">Senior Java Backend Developer | Cloud | Microservices</p>
+      <p class="mt-2 text-lg">Senior Java Full-Stack Developer | Cloud | Microservices</p>
 
       <!-- Social Icons -->
       <div class="mt-4 flex justify-center space-x-6 text-2xl">
@@ -77,130 +77,236 @@
 
   <!-- Projects -->
   <section id="projects" class="max-w-5xl mx-auto py-16 px-6">
-    <h2 class="text-2xl font-bold mb-6">Projects</h2>
-    <div class="grid gap-6 md:grid-cols-2">
-      
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">CloudSenseAI</h3>
-        <h3 class="text-xl font-semibold">Resolve Tech Solutions</h3>
-        <p>
-          AI-powered cloud observability platform integrating anomaly detection, 
-          ServiceNow automation, and chatbot-based incident resolution.
-        </p>
+  <h2 class="text-2xl font-bold mb-6">Projects</h2>
+  <div class="space-y-6">
+
+    <!-- Project Item -->
+    <div class="project-item bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+        <div>
+          <h3 class="text-xl font-semibold">CloudSenseAI</h3>
+          <p class="text-gray-600">Resolve Tech Solutions</p>
+        </div>
+        <span class="icon transition-transform transform">+</span>
+      </button>
+      <div class="details hidden mt-2">
+        <p>AI-powered cloud observability platform integrating anomaly detection,
+           ServiceNow automation, and chatbot-based incident resolution.</p>
         <ul class="list-disc list-inside text-gray-700">
-            <li>Developed a cloud observability platform with AWS Lambda, Bedrock, and AI automation.</li>
-            <li>Implemented chatbot-driven incident resolution and ServiceNow integration.</li>
-            <li>Applied anomaly detection models for real-time cloud performance monitoring.</li>
-          </ul>
+          <li>Developed a cloud observability platform with AWS Lambda, Bedrock, and AI automation.</li>
+          <li>Implemented chatbot-driven incident resolution and ServiceNow integration.</li>
+          <li>Applied anomaly detection models for real-time cloud performance monitoring.</li>
+        </ul>
       </div>
-      
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">Vehicle Software Updates (VSU) </h3>
-        <h3 class="text-xl font-semibold">Ford Motor Company</h3>
+    </div>
+
+    <!-- Project Item -->
+    <div class="project-item bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+        <div>
+          <h3 class="text-xl font-semibold">Vehicle Software Updates (VSU)</h3>
+          <p class="text-gray-600">Ford Motor Company</p>
+        </div>
+        <span class="icon transition-transform transform">+</span>
+      </button>
+      <div class="details hidden mt-2">
         <p>
-          Platform is responsible for delivering software
-          updates to tens of millions of customer vehicles per year via over-the-air (OTA) and dealer service updates
-          for a wide range of its current-model vehicle lines, in-order to support its next-generation vehicle.
-          
+          Platform is responsible for delivering software updates to tens of millions of vehicles per year via OTA
+          and dealer service updates for next-generation vehicles.
         </p>
       </div>
-      
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">E3P - Application Modernization & Data Migration</h3>
-        <h3 class="text-xl font-semibold">Ford Motor Company</h3>
-        <p>
-          Migrated monolithic applications to cloud-native microservices on GCP 
-          using Spring Boot and Kubernetes.
-          Led Oracle → PostgreSQL migration with zero downtime strategy for 
-          mission-critical applications.
-        </p>
+    </div>
+
+    <!-- Project Item -->
+    <div class="project-item bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+        <div>
+          <h3 class="text-xl font-semibold">E3P - Application Modernization & Data Migration</h3>
+          <p class="text-gray-600">Ford Motor Company</p>
+        </div>
+        <span class="icon transition-transform transform">+</span>
+      </button>
+      <div class="details hidden mt-2">
+        <p>Migrated monolithic applications to cloud-native microservices on GCP and modernized databases.</p>
         <ul class="list-disc list-inside text-gray-700">
-            <li>Led cloud modernization efforts, migrating legacy systems to microservices on GCP.</li>
-            <li>Designed and deployed scalable backend systems using Java, Spring Boot, and Kubernetes.</li>
-            <li>Collaborated across global teams to deliver enterprise-grade solutions in Automotive IT.</li>
-          </ul>
+          <li>Migrated legacy systems to microservices on GCP.</li>
+          <li>Designed scalable backend systems using Java, Spring Boot, and Kubernetes.</li>
+          <li>Executed Oracle → PostgreSQL migration with zero downtime.</li>
+        </ul>
       </div>
-      
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">North American Parts Association (NAPO-II) </h3>
-        <h3 class="text-xl font-semibold">Toyota Motor North America</h3>
-        <p>
-          The primary objective of NAPO Phase 2 is to rewrite the existing online T Parts North America (“TPNA”) system written in Visual Age
+    </div>
+
+
+    <!-- Project Item -->
+    <div class="project-item bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+        <div>
+          <h3 class="text-xl font-semibold">North American Parts Association (NAPO-II)</h3>
+          <p class="text-gray-600">Toyota Motors North America</p>
+        </div>
+        <span class="icon transition-transform transform">+</span>
+      </button>
+      <div class="details hidden mt-2">
+        <p>The primary objective of NAPO Phase 2 is to rewrite the existing online T Parts North America (“TPNA”) system written in Visual Age
           Smalltalk. The existing TPNA system has been active for the last fifteen (15) years using the old technology.
           This project will re-write the existing online system to J2EE and Oracle Web Center Portal/ADF
           technology, while keeping the existing database structure that impacts the nightly production batch
           cycle. In addition to the TPNA replacement, emphasis has been put on re-engineering the process and
           incorporating ad-hoc systems that were created in response to the lack of functionality in TPNA. The adhoc
-          systems include functionality previously written in Lotus Notes, Access, Excel, and other sources.
-          
-        </p>
+          systems include functionality previously written in Lotus Notes, Access, Excel, and other sources.</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Re-wrote the existing online system to J2EE and Oracle Web Center Portal/ADF technology.</li>
+          <li>Designed scalable backend systems using Java, Spring, ADF, and Oracle Web Center Portal.</li>
+          <li>Re-engineered the process and incorporated ad-hoc systems that were created in response to the lack of functionality in TPNA.</li>
+          <li>Integrated the existing database structure that impacts the nightly production batch cycle.</li>
+        </ul>
       </div>
+    </div>
 
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">Document Management System (DMS) </h3>
-        <h3 class="text-xl font-semibold">Client Linx Software Pvt., Ltd., (CLSS Labs)</h3>
-        <p>
-          Document Management System (DMS) is a multi-layer (Java/MYSQL Server) Web application.
+    <!-- Project Item -->
+    <div class="project-item bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+        <div>
+          <h3 class="text-xl font-semibold">iPlus Incentives Management System – Incentive Status Portal</h3>
+          <p class="text-gray-600">Toyota Motor North America</p>
+        </div>
+        <span class="icon transition-transform transform">+</span>
+      </button>
+      <div class="details hidden mt-2">
+        <p>The iPlus Incentives Management System is a web-based application that deals with
+          the processing of Incentives offered to the Customers and the dealers. The Incentives offerings that are
+          approved by the Client, National and Regional users will be available for Dealers to apply the Incentive for
+          a particular sale. These Incentives are received and processed by the sets of Business Rules defined within
+          iPlus. If the Business Rules are validated and passed, the payment will be processed for the Dealer. The
+          client marketing users can override the system decision for any Incentive in iPlus System. Incentive Status
+          Portal is an application where the Dealer back-office Personal will be using to retrieve the status of the
+          incentives applied. The application mainly focuses on the status of the Vehicles sold, payments of the
+          incentives applied, Challenges to be raised by dealer in case of any discrepancies in payments and act upon
+          the deal reviews on incentives applied. It is built using Java, Spring Boot, Microservices, and Angular2.</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Built the Incentive Status Portal using Java, Spring Boot, Microservices, and Angular2.</li>
+          <li>Integrated the application with the iPlus System using REST APIs.</li>
+          <li>Implemented the business rules for the Incentives using the iPlus System.</li>
+          <li>Implemented the incentive status portal using Angular2.</li>
+          <li>Used db2 as relational database and appache solr, mongodb as nosql database.</li>
+        </ul>
+      </div>
+    </div>
+     <!-- Project Item -->
+     <div class="project-item bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+        <div>
+          <h3 class="text-xl font-semibold">Document Management System (DMS)</h3>
+          <p class="text-gray-600">Client Linx Software Pvt., Ltd., (CLSS Labs)</p>
+        </div>
+        <span class="icon transition-transform transform">+</span>
+      </button>
+      <div class="details hidden mt-2">
+        <p>Document Management System (DMS) is a multi-layer (Java/MYSQL Server) Web application.
           The main goal of the system is to store and retrieve documents in different formats (like
           Doc, PDF, Excel, JPEG, etc.), and find documents using the contents of the document. There is a lot of
           manual work involved in maintaining documents. This application provides the privilege to upload and
           download documents at any time. Document search by content of the document is one of the key features
           of the system and searching by keywords fed by the user is also provided. Version management is also
           included in this application. Users can quickly view the documents they search for. The flow of the work
-          is controlled by the application.
+          is controlled by the application.</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Built the Incentive Status Portal using Java, Spring Boot, Microservices, and Angular2.</li>
           
-        </p>
+        </ul>
       </div>
-
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">TyreDrome - Integrated with SAP Billing</h3>
-        <h3 class="text-xl font-semibold">MRF Limitted India</h3>
-        <p>
+    </div>
+	<div class="project-item bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+        <div>
+          <h3 class="text-xl font-semibold">TyreDrome - Integrated with SAP Billing</h3>
+          <p class="text-gray-600">MRF Limitted India</p>
+        </div>
+        <span class="icon transition-transform transform">+</span>
+      </button>
+      <div class="details hidden mt-2">
+        <p></p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li></li>
           
-          
-        </p>
+        </ul>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">MWIS (Middle Ware Interface System) </h3>
-        <h3 class="text-xl font-semibold">MRF Limitted India</h3>
-        <p>
-          MWIS (Middle Ware Interface System) Integrated with SAP is a multi-layer
+    </div>
+	
+	<div class="project-item bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+        <div>
+          <h3 class="text-xl font-semibold">MWIS (Middle Ware Interface System)</h3>
+          <p class="text-gray-600">MRF Limitted India</p>
+        </div>
+        <span class="icon transition-transform transform">+</span>
+      </button>
+      <div class="details hidden mt-2">
+        <p>MWIS (Middle Ware Interface System) Integrated with SAP is a multi-layer
           Java/SQL Server/SAP/Oracle application acting as middleware between SAP and Automated System.
           There is no communication in the existing system. Middleware connects both systems. It gets the data from
           Automated System and transfers the filtered data into SAP and from SAP to Automated. The
-          communication between Middleware and Automated System is through Web Service as XML Strings.
+          communication between Middleware and Automated System is through Web Service as XML Strings.</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li></li>
           
-        </p>
+        </ul>
       </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2">MRF C&F Billing & Collection System Integrated with SAP </h3>
-        <h3 class="text-xl font-semibold">MRF Vapocure Paints India</h3>
-        <p>
-          MRF C&F Billing & Collection System Integrated with SAP is a multi-layer
+    </div>
+	<div class="project-item bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+      <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+        <div>
+          <h3 class="text-xl font-semibold">MRF C&F Billing & Collection System Integrated with SAP</h3>
+          <p class="text-gray-600">MRF Vapocure Paints India</p>
+        </div>
+        <span class="icon transition-transform transform">+</span>
+      </button>
+      <div class="details hidden mt-2">
+        <p>MRF C&F Billing & Collection System Integrated with SAP is a multi-layer
           JSP/MySql5.5/SAP web application with a few hundred users. No changes in the business process and the
           same existing business process will be followed. The existing system is becoming obsolete, and a lot of
           manual work is involved in transferring data into SAP. The latest technology is highly user friendly, has
           less manual interfacing effort with SAP, has real time data accessibility, and provides real time reports
           generation. A billing option is provided in the new system, and billing reversal is also permitted in the new
-          system.
+          system.</p>
+        <ul class="list-disc list-inside text-gray-700">
+          <li>Being a core developer  </li>
           
-        </p>
+        </ul>
       </div>
     </div>
-  </section>
+    <!-- You can repeat the same structure for Toyota, MRF, CLSS Labs projects -->
+  </div>
+</section>
 <!-- Experience -->
 <section id="experience" class="bg-gray-50 py-16 px-6">
   <div class="max-w-5xl mx-auto">
     <h2 class="text-2xl font-bold mb-6">Experience</h2>
 
     <div class="space-y-8 border-l-4 border-yellow-400 pl-6">
-
-      <!-- Ford -->
+      <!-- Rts -->
       <div class="experience-item">
         <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
           <div>
-            <h3 class="text-xl font-semibold">Ford Motors</h3>
-            <p class="text-gray-600">Development Expert – Java Backend | 2024 – Till Date</p>
+            <h3 class="text-xl font-semibold">Resolve Tech Solutions LLC</h3>
+            <p class="text-gray-600">Lead Full-Stack Developer | Jun 2024 – Present</p>
+          </div>
+          <span class="icon transition-transform transform">+</span>
+        </button>
+        <div class="details hidden mt-2">
+          <ul class="list-disc list-inside text-gray-700">
+            <li>Developed a cloud observability platform with AWS Lambda, Bedrock, and AI automation.</li>
+            <li>Implemented chatbot-driven incident resolution and ServiceNow integration.</li>
+            <li>Applied anomaly detection models for real-time cloud performance monitoring.</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Cognizant -->
+      <div class="experience-item">
+        <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
+          <div>
+            <h3 class="text-xl font-semibold">Cognizant Technology Solutions - India</h3>
+            <p class="text-gray-600">Specialist - Full-Stack Developer | Dec 2014 – May 2024</p>
           </div>
           <span class="icon transition-transform transform">+</span>
         </button>
@@ -213,41 +319,24 @@
         </div>
       </div>
 
-      <!-- CBRE -->
+      <!-- Clss -->
       <div class="experience-item">
         <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
           <div>
-            <h3 class="text-xl font-semibold">CBRE</h3>
-            <p class="text-gray-600">Senior Java Developer | 2022 – 2023</p>
+            <h3 class="text-xl font-semibold">Client Linx Software Pvt., Ltd., (CLSS Labs) </h3>
+            <p class="text-gray-600"> Java Developer | Jun 2010 – Dec 2014</p>
           </div>
           <span class="icon transition-transform transform">+</span>
         </button>
         <div class="details hidden mt-2">
           <ul class="list-disc list-inside text-gray-700">
-            <li>Built enterprise microservices with Spring Boot, REST APIs, and Docker containers.</li>
-            <li>Integrated CI/CD pipelines using Jenkins and GitHub for faster deployments.</li>
+            
             <li>Enhanced performance of database-heavy applications on PostgreSQL and Oracle.</li>
           </ul>
         </div>
       </div>
 
-      <!-- CloudSenseAI -->
-      <div class="experience-item">
-        <button onclick="toggleDetails(this)" class="w-full flex justify-between items-center text-left">
-          <div>
-            <h3 class="text-xl font-semibold">CloudSenseAI (Personal Project)</h3>
-            <p class="text-gray-600">Founder / Architect | 2023 – Present</p>
-          </div>
-          <span class="icon transition-transform transform">+</span>
-        </button>
-        <div class="details hidden mt-2">
-          <ul class="list-disc list-inside text-gray-700">
-            <li>Developed a cloud observability platform with AWS Lambda, Bedrock, and AI automation.</li>
-            <li>Implemented chatbot-driven incident resolution and ServiceNow integration.</li>
-            <li>Applied anomaly detection models for real-time cloud performance monitoring.</li>
-          </ul>
-        </div>
-      </div>
+      
 
     </div>
   </div>
